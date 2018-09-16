@@ -1,4 +1,5 @@
 # Homework Demo
+[![Build Status](https://travis-ci.com/NPUA/hwk-0-amuradyan.svg?branch=master)](https://travis-ci.com/NPUA/hwk-0-amuradyan)
 
 This is a test homework project and it relies on [this ProjectEuler](https://github.com/amuradyan/ProjectEulerPascal) repo.
 It has the same structure, just the solutions section has been trimmed out.
