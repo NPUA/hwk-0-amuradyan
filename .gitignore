@@ -1,0 +1,10 @@
+lib/
+backup/
+fprg.pdf
+*.exe
+*.lps
+.vscode/
+GPATH
+GTAGS
+GRTAGS
+*.ini
