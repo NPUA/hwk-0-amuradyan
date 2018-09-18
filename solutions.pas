@@ -31,8 +31,25 @@ end;
 
 {(Even Fibonacci numbers)[https://projecteuler.net/problem=2]}
 function EvenFibonacciNumbers: Int64;
+var
+  fibPrev, fibCurr, sum: Int64;
+  cap: Int64;
 begin
-  {TODO: Implement the EvenFibonacciNumbers method}
+  fibPrev := 1;
+  fibCurr := 2;
+  sum := 0;
+  cap := 4000000;
+
+  While fibCurr < cap do
+  begin
+    If (fibCurr mod 2 = 0) then sum := sum + fibCurr;
+
+    fibCurr := fibCurr + fibPrev;
+    fibPrev := fibCurr - fibPrev;
+  end;
+
+  WriteLn('Even Fibonacci Numbers - ', sum);
+  EvenFibonacciNumbers := sum;
   WriteLn('TODO: Implement the EvenFibonacciNumbers method');
 end;
 
