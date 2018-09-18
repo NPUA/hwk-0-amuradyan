@@ -38,10 +38,20 @@ end;
 
 {(Multiples of 3 and 5)[https://projecteuler.net/problem=1]}
 function MultiplesOf3And5: Int64;
+var
+  i, sum: Int64;
 begin
-  {TODO: Implement the MultiplesOf3And5 method}
-  WriteLn('TODO: Implement the MultiplesOf3And5 method');
+  sum := 0;
+  i := 0;
+
+  While i <= 999 do
+  begin
+    If (i mod 3 = 0) or (i mod 5 = 0) then sum := sum + i;
+    i := i + 1;
+  end;
+
+  WriteLn('Multiples Of 3 And 5 - ', sum);
+  MultiplesOf3And5 := sum;
 end;
 
 end.
-s
